@@ -10,8 +10,18 @@ body {
   min-height: 100vh;
   color: #2a3132;
 }
+h1 {
+  color: #fff;
+  padding: 10px;
+}
 header {
   font-size: 2rem;
+}
+.box {
+  max-width: 430px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 header,
@@ -45,7 +55,7 @@ form button:hover {
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 80%;
   list-style: none;
 }
 
@@ -131,6 +141,11 @@ select {
   background: #763626;
   cursor: pointer;
   pointer-events: none;
+}
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 /* Transition */
 /*

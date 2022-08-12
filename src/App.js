@@ -9,7 +9,7 @@ function App() {
   const [inputText, setInputText] = useState('');
   const [todos, setTodos] = useState([]);
   return (
-    <div className="App">
+    <div className="App box">
       <header>
         <h1>Todo List</h1>
       </header>
@@ -19,7 +19,10 @@ function App() {
         setTodos={setTodos}
         setInputText={setInputText}
       />
-      <TodoList />
+      <TodoList setTodos={setTodos} todos={todos} />
+      <footer>
+        <p>&copy; 2022 Oliver Tepper</p>
+      </footer>
     </div>
   );
 }
